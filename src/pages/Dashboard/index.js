@@ -1,15 +1,18 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import store from '../../util/store';
 
 import { Container } from './styles';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <h1>esse</h1>
-      </div>
+      <Provider store={store}>
+      <Container>
+        <h1>dashboard</h1>
+      </Container>
+      </Provider>
     );
   }
 }
