@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
+font-size: 60%;
+
 :root {
     --color-primary: #ff9000;
     --color-secondary: #312E38;
@@ -67,8 +69,6 @@ export default createGlobalStyle`
 }
 
 body {
-   background: #312E38;
-   color: #FFF;
    -webkit-font-smoothing: antialiased;
 
 }
@@ -86,6 +86,49 @@ button {
    cursor: pointer;
 }
 
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* FLEX */
+
+.flex {
+  display: flex;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  align-items: center;
+}
 
 
 `;

@@ -1,18 +1,20 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import store from '../../util/store';
+import React from 'react';
+import BarraTop from '../../components/BarraTop';
 
-import { Container } from './styles';
-
-class Dashboard extends Component {
+class Dashboard extends React.Component {
   render() {
     return (
-      <Provider store={store}>
-      <Container>
-        <h1>dashboard</h1>
-      </Container>
-      </Provider>
+      <di className="flex horizontal full-height">
+        <div className="flex vertical">
+          <p>Menu</p>
+        </div>
+        <div className="flex vertical full-width">
+          <div className='flex horizontal'>
+            <BarraTop />
+          </div>
+          <div className="flex full-height">{this.props.children}</div>
+        </div>
+      </di>
     );
   }
 }

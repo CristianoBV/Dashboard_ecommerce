@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // import Login from '../pages/';
-import Dashboard from "../pages/Dashboard";
+import Pedidos from "../containers/Pedidos";
+import base from '../containers/HOC/base';
 
 const Routes = () => (
   // const logado = localStorage.getItem("@user");
@@ -11,7 +12,7 @@ const Routes = () => (
   <Router>
     <Switch>
       {/* <Route path="/" exact component={Login} /> */}
-       <Route path="/" component={Dashboard} />
+       <Route path="/" component={base(Pedidos)} />
     </Switch>
   </Router>
 );
