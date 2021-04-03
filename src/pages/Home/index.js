@@ -1,9 +1,10 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 
 import { Container } from './styles';
 
-class Home extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div>
@@ -13,4 +14,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Dashboard;
