@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const BarraTop = () => (
   <div className='flex horizontal full-width'>
     <div className='flex-1 flex flex-start'>
-      <a href="#">Ver Loja</a>
+      <a href="/">Ver Loja</a>
     </div>
     <div className='flex-1 flex flex-end'>
       <Link to='logout' >Sair</Link>
